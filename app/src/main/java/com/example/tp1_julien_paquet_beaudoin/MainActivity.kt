@@ -6,7 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.content.Intent
 import android.content.SharedPreferences
-import android.view.View
+import android.text.Editable
+import android.text.TextWatcher
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,9 +28,20 @@ class MainActivity : AppCompatActivity() {
 
         //Désactiver le bouton de connexion si le nom est vide
         btConnexion.isEnabled = false
-        txtNom.setOnKeyListener(View.OnKeyListener { _, _, _ ->
-            btConnexion.isEnabled = txtNom.text.toString() != ""
-            false
+        txtNom.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                // Regarder si le texte est vide
+                val isNotBlank = s?.isNotBlank() == true
+
+                // Gestion de l'état du bouton
+                btConnexion.isEnabled = isNotBlank
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+            }
         })
 
         //Bouton de connexion

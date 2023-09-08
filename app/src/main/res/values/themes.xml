@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TP1_JULIEN_PAQUET_BEAUDOIN" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/royalBlue</item>
+    </style>
+    <style name="Theme.TP1_JULIEN_PAQUET_BEAUDOIN" parent="Base.Theme.TP1_JULIEN_PAQUET_BEAUDOIN" />
+</resources>

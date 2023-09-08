@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Royal Rush</string>
+    <string name="hintname">Your name</string>
+    <string name="hintNbrChips">Number of tokens requested</string>
+    <string name="hintMise">Wager</string>
+    <string name="hintPrediction">Your predicted number</string>
+    <string name="boutonConnexion">Connection</string>
+    <string name="messageBienvenue">Welcome</string>
+    <string name="nbrChips">Number of chips: </string>
+    <string name="boutonRoulette">Roulette</string>
+    <string name="boutonBank">Chips Bank</string>
+    <string name="boutonAchat">Buy</string>
+    <string name="radioEven">Even</string>
+    <string name="radioOdd">Odd</string>
+    <string name="messageMise">Your wager: </string>
+    <string name="messagePrediction">Your prediction: </string>
+    <string name="boutonJouer">Play</string>
+    <string name="title_activity_roulette">Roulette</string>
+    <string name="messageResultat">Winning number: %1$d</string>
+    <string name="messageSnackBarGagne">you won %1$d chips</string>
+    <string name="messageSnackBarPerdu">You lost your chips</string>
+    <string name="messageErreurPred">Please enter a valid prediction between 0 and 36</string>
+    <string name="messageErreurMise">Please enter a valid bet</string>
+    <string name="messageErreurJetons">You do not have enought chips</string>
+    <string name="messageErreurBank">An error has occurred with your token purchase</string>
+</resources>

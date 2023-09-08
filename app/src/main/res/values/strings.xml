@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Royal Rush</string>
+    <string name="hintname">Votre nom</string>
+    <string name="hintNbrChips">Nombre de jetons demandés</string>
+    <string name="hintMise">Misez</string>
+    <string name="hintPrediction">Votre nombre prédit</string>
+    <string name="boutonConnexion">Connexion</string>
+    <string name="messageBienvenue">Bienvenue</string>
+    <string name="nbrChips">Nombre de jetons: </string>
+    <string name="boutonRoulette">Roulette</string>
+    <string name="boutonBank">Banque de jetons</string>
+    <string name="boutonAchat">Acheter</string>
+    <string name="radioEven">Pair</string>
+    <string name="radioOdd">Impair</string>
+    <string name="messageMise">Votre mise: </string>
+    <string name="messagePrediction">Votre prédiction: </string>
+    <string name="boutonJouer">Jouer</string>
+    <string name="title_activity_roulette">Roulette</string>
+    <string name="messageResultat">Nombre gagnant: %1$d</string>
+    <string name="messageSnackBarGagne">Vous avez gagné %1$d jetons</string>
+    <string name="messageSnackBarPerdu">Vous avez perdu jetons</string>
+    <string name="messageErreurPred">Veuillez entrer une prédiction valide entre 0 et 36</string>
+    <string name="messageErreurMise">Veuillez entrer une mise valide</string>
+    <string name="messageErreurJetons">Vous n\'avez plus de jetons</string>
+    <string name="messageErreurBank">Une erreur s\'est produite avec votre achat de jetons</string>
+</resources>

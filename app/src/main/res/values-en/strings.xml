@@ -24,4 +24,5 @@
     <string name="messageErreurMise">Please enter a valid bet</string>
     <string name="messageErreurJetons">You do not have enought chips</string>
     <string name="messageErreurBank">An error has occurred with your token purchase</string>
+    <string name="messageErreurAjoutBank">You need to buy at least one chip</string>
 </resources>

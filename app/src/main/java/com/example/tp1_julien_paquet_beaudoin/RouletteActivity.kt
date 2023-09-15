@@ -10,6 +10,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import java.util.Random
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 
 class RouletteActivity : AppCompatActivity() {
@@ -144,13 +145,11 @@ class RouletteActivity : AppCompatActivity() {
                     ).show()
                 }
             } else {
-                Snackbar.make(
-                    findViewById(android.R.id.content),
-                    getString(R.string.messageErreurJetons),
-                    Snackbar.LENGTH_LONG
-                ).show()
                 val intent = Intent(this@RouletteActivity, AccueilActivity::class.java)
                 startActivity(intent)
+                Toast.makeText(this, getString(R.string.messageErreurJetons), Toast.LENGTH_LONG)
+                    .show()
+
             }
         }
 

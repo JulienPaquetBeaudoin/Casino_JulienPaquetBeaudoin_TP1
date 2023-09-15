@@ -24,4 +24,5 @@
     <string name="messageErreurMise">Veuillez entrer une mise valide</string>
     <string name="messageErreurJetons">Vous n\'avez plus de jetons</string>
     <string name="messageErreurBank">Une erreur s\'est produite avec votre achat de jetons</string>
+    <string name="messageErreurAjoutBank">Vous devez acheter un minimum un jeton</string>
 </resources>

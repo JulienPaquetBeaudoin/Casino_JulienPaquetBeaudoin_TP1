@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.app.Activity
 import android.content.Intent
+import android.widget.Toast
 
 class BankActivity : AppCompatActivity() {
 
@@ -24,11 +25,17 @@ class BankActivity : AppCompatActivity() {
         txtChips = findViewById(R.id.txtChips)
 
         //Bouton d'achat de jetons
-        btAchat.setOnClickListener(){
-            val intent = Intent()
-            intent.putExtra("chips", txtChips.text.toString().toInt())
-            setResult(Activity.RESULT_OK, intent)
-            finish()
+        btAchat.setOnClickListener() {
+            if (txtChips.text.toString().toInt() > 0) {
+                val intent = Intent()
+                intent.putExtra("chips", txtChips.text.toString().toInt())
+                setResult(Activity.RESULT_OK, intent)
+                finish()
+            } else {
+                Toast.makeText(this, getString(R.string.messageErreurAjoutBank), Toast.LENGTH_LONG)
+                    .show()
+            }
+
         }
     }
 }
